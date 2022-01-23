@@ -1,0 +1,20 @@
+
+<h2>My Post Filtered List</h2>
+<thead>
+    <th>id</th>
+    <th>title</th>
+    <th>body</th>
+</thead>
+<tbody>
+    <tr *ngFor="let post of ambo">
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+
+    </tr>
+    <div>
+    
+    <button router-link ="/posts" class = "btn btn-primary"> post now</button>
+
+</div>
+</tbody>
